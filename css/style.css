@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2? family= Open+Sans:wght@300 & family= Raleway:ital@1 & family= Square+Peg & display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+background-color: chartreuse;
+height: 70px;
+position: sticky; 
+top: 0;
+display: grid;
+grid-template-rows:1fr;
+grid-template-columns:300px 1fr ;
+grid-template-areas:"principal lista";
+justify-content: center;
+align-items: center;
+align-content: center;
+justify-items: center;
+}
+ul li{
+display: inline-block;
+list-style: none;
+padding: 10px;
+}
+.lista{
+list-style: none;
+grid-area: lista;
+text-align: center;
+}
+.principal{
+grid-area: principal;
+font-size: 20px;
+}
+main{
+grid-area: main;
+display: none;
+display: grid;
+grid-template-rows: 100vh 100vh 100vh;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-areas:"imagenImg imagenImg imagenImg"
+                    "primeraCaja primeraCaja primeraCaja"
+                    "segundaCaja segundaCaja segundaCaja";
+       
+}
+.imagenImg{
+grid-area: imagenImg;
+background-image: url(../images/iphone.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+.imgDiv{
+text-align: center;
+color:black;
+font-family: sans-serif;
+font-size: 30px;
+}
+.primeraCaja{
+grid-area: primeraCaja;
+display: grid;
+grid-template-rows: 1fr 1fr;
+grid-template-columns:repeat(4,1fr)  ;
+grid-template-areas:"primerCon primerCon primerCon primerCon"
+                    "contenido contenido contenido contenido";
+}
+#primerCon{
+grid-area: primerCon;
+text-align: center;
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-size: 25px;
+font-family:  'Raleway', sans-serif;
+}
+.contenido{
+grid-area: contenido;
+background-color: aqua;
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 60px;
+}
+#imgApp{
+height: 150px;
+width: 150px;
+}
+#imgMot{   
+height: 210px;
+width: 210px;
+}
+#imgHua{
+height: 170px;
+width: 170px;
+}
+
+.segundaCaja{
+grid-area: segundaCaja;
+background-color: brown;
+display: grid;
+grid-template-rows: 150px 1fr  ;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-areas:". cajaUno ."
+                    "secciones secciones secciones";
+}
+#cajaUno{
+grid-area: cajaUno;
+color: aliceblue;
+text-align: center;
+padding-top: 20px;
+font-size: 35px;
+}
+
+#secciones{
+color: aliceblue;
+font-size: 20px;
+text-align: center;
+grid-area: secciones;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+flex-direction: row;
+justify-items: center; 
+align-items: center;
+gap: 60px;
+}
+
+#uno{
+font-size: 50px;
+padding-right: 30px;
+}
+#dos{
+font-size: 50px;
+}
+#tres{
+font-size: 50px;
+}
+
+#divMoto{
+height: 170px;
+width: 150px;
+}
+#divReparacion{
+height: 170px;
+width: 150px;
+
+}
+#divPaquete{
+height: 170px;
+width: 150px;
+}
+#aside{
+text-align: center;
+font-size: 20px;
+grid-area: aside;
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+justify-items: center;
+
+}
+.iconoWhuas{
+position:fixed;
+bottom: 20px;
+right: 20px;
+width: 5%;
+}
+#conCuatro{
+margin: 10px;
+font-size: 30px;
+}
+button{
+font-size: 30px;
+border-radius: 40px;
+border-color: brown;
+border-width: 10px; 
+}
+.cellContacto{
+background-color: aqua;
+display: grid;
+grid-template-rows: 30px 100vh;
+grid-template-columns:1fr 1fr;
+grid-template-areas:"titulo titulo"
+                    "divIframe contacto";
+justify-content: center;   
+align-items: center;     
+justify-items: center; 
+align-content: center;        
+gap: 10px;
+}
+.titulo{
+grid-area: titulo;
+font-size: 20px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+.contacto{
+grid-area: contacto;
+}
+#divIframe{
+grid-area: divIframe;
+font-family: monospace;
+font-size: 15px;
+}
+#divContacto{
+font-size: 20px;
+}
+.empresa{
+display: grid;
+grid-template-rows:30px 1fr;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-areas:". divTitulo ."
+                    "divBene divBene imgMano";                                  
+}
+#divTitulo{
+grid-area: divTitulo;
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: space-around;
+}
+#divBene{
+background-color: black;
+color: aliceblue;
+grid-area: divBene;
+display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: center;
+align-content: center;
+align-items: center;
+}
+#benefi h2{
+padding: 20px;
+}
+#benefi p{
+padding: 5px;
+}
+#imgMano{
+grid-area: imgMano;
+background-color: black;
+padding-top: 10px;
+}
+#imgTarjetas{
+height:35px;
+}
+#mano{
+height: 400px;
+width: 370px;
+}
+footer{
+text-align: center;
+background-color: chartreuse ;
+display: grid;
+grid-template-rows: 1fr 1fr;
+grid-template-columns: 1f;
+grid-template-areas:"primerNav"
+                    "segundoNav";
+ justify-content: center;
+ align-items: center;     
+ align-content: center; 
+ flex-wrap: wrap;            
+}
+.primerNav{
+ grid-area: primerNav;
+}
+.segundoNav{
+grid-area: segundoNav;
+}
+.seccion{
+display: grid; 
+grid-template-rows: 30px 1fr;
+grid-template-columns:1fr 1fr 1fr;
+grid-template-areas:"seccionTitu seccionTitu seccionTitu"
+                    "seccionParra seccionParra seccionParra";
+}
+#seccionTitu{
+grid-area: seccionTitu;
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+}
+
+#seccionParra{
+background-color: black;
+color: antiquewhite;
+grid-area: seccionParra;
+display: flex;
+flex-direction: row;
+justify-content: center;
+
+}
+#seccionParra h2{
+ padding: 20px;
+}
+#seccionParra p{
+padding: 10px;
+}
+.tecnico{
+display: grid;
+grid-template-rows: 30px 1fr;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-areas:"tecInicio tecInicio tecInicio"
+                    "seccionUno seccionUno seccionUno";
+}
+#tecInicio{
+ grid-area: tecInicio;
+text-align: center;
+}
+#seccionUno{
+ background-color: black; 
+ color: aliceblue;
+grid-area: seccionUno;
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+#servi h2{
+padding: 20px;
+}
+#servi p{
+padding: 10px;
+}   
+.llave{
+    border-radius: 80px;
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); 
+}   
+.llave:hover {
+animation: shake 0.70s;
+}
+      
+@keyframes shake {
+ 10%, 90% {
+  transform: translate3d(-1px, 0, 0);
+}
+        
+20%, 80% {
+    transform: translate3d(2px, 0, 0);
+}
+        
+30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+}
+      
+ 40%, 60% {
+ transform: translate3d(4px, 0, 0);
+ }
+}
+@media only screen and (max-width: 1024px) {
+
+ header {
+height: 130px;
+grid-template-rows: 1fr;
+ grid-template-columns: .5fr 1fr;
+grid-template-areas:"principal lista";
+        } 
+main{   
+grid-template-rows: 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-areas:"imagenImg imagenImg imagenImg"
+                    "primeraCaja primeraCaja primeraCaja"
+                    "segundaCaja segundaCaja segundaCaja";
+
+}
+.segundaCaja{
+grid-template-rows: 150px 1fr  ;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-areas:". cajaUno ."
+                    "secciones secciones secciones";
+}
+.cellContacto{
+    grid-template-rows: 30px 100vh;
+    grid-template-columns:1fr 1fr;
+    grid-template-areas:"titulo titulo"
+                        "divIframe contacto";
+}}
+@media only screen and (max-width: 500px)  {   
+header{
+    height: 190px;
+    grid-template-rows:1fr 1fr;
+    grid-template-columns:1fr ;
+    grid-template-areas:"principal"
+                        "lista"
+                        "lista";
+} 
+main{ 
+    grid-template-rows:.5fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:"imagenImg"
+                        "primeraCaja"
+                        "segundaCaja";
+        
+}  
+.segundaCaja{
+
+    grid-template-rows: repeat(4,1fr) ;
+    grid-template-columns: 1fr;
+    grid-template-areas:"cajaUno"
+                        "secciones"
+                        "secciones"
+                        "secciones";
+}
+.cellContacto{
+    grid-template-rows: 30px 1fr 1fr;
+    grid-template-columns:1fr;
+    grid-template-areas:"titulo"
+                        "contacto"
+                        "divIframe";
+}  
+.empresa{
+    grid-template-rows:30px 1fr .5fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:"divTitulo"
+                        "divBene"
+                        "imgMano";                                  
+}                      
+}
